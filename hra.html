@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+<canvas id="myCanvas" width="1340" height="590", >
+<img id="pozadie1" src="pozadie1.jpg" alt="pozadie1">
+<img id="fighter1" src="fighter1.jpg" alt="fighter1">
+<img id="fighter2" src="fighter2.jpg" alt="fighter2">
+</canvas>
+
+<script>
+window.onload = function() {
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("pozadie1d");
+  ctx.drawImage(pozadie1, 1, 1);
+  
+	//text
+  var canvas = document.getElementById("myCanvas");
+  var ctx=canvas.getContext("2d");
+  ctx.font="40px Times New Roman";
+  ctx.fillStyle = "white";
+  ctx.textAlign = "top";
+  ctx.fillText("Street Fighter", canvas.width/2.5, canvas.height/7);
+  
+	//obrazok1
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("fighter1");
+  ctx.drawImage(fighter1, 9, 365, 220, 220);
+  
+  //obrazok2
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("fighter2");
+  ctx.drawImage(fighter2, 980, 365, 220, 220);
+  
+  
+
+}
+
+
+</script>
+
+</body>
+</html>
