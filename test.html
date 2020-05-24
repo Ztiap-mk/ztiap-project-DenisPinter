@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body onload="startGame()">
+
+	<audio id="myAudio">
+		<source src="war.mp3" type="audio/mpeg">
+	</audio>
+	
+    <div id="theHead">Vitajte v hre Street Fighter!</div>    
+	<div id="newGame" onclick="runGame()" onmouseover="this.style.backgroundColor = '#5c5c3d'" onmouseout="this.style.backgroundColor = '#999966'">Hrať</div>   
+	<div id="intsBtn" onmouseover="this.style.backgroundColor = '#5c5c3d'" onmouseout="this.style.backgroundColor = '#999966'" onclick="showints()">Inštrukcie</div>
+	<div id="ints">Inštrukcie: <br> 
+	Princíp hry je zdolať protihráča. <br>
+	Hráč sa pohybuje v dolnej časti obrazovky. <br>
+	Hráč sa bude ovládať pomocou klávesnice – konkrétne pomocou šípok - hore, dole, doprava a doľava. </div>    
+	<div id="backBtn" onmouseover="this.style.backgroundColor = '#5c5c3d'" onmouseout="this.style.backgroundColor = '#999966'" onclick="goBack()">Späť</div>
+	<div id="playAudio" onmouseover="this.style.backgroundColor = '#5c5c3d'" onmouseout="this.style.backgroundColor = '#999966'" onclick="playAudio()">Pustiť hudbu</div>
+	<div id="pauseAudio" onmouseover="this.style.backgroundColor = '#5c5c3d'" onmouseout="this.style.backgroundColor = '#999966'" onclick="pauseAudio()">Zastaviť hudbu</div>
+	<div id="playAgain" onmouseover="this.style.backgroundColor = '#5c5c3d'" onmouseout="this.style.backgroundColor = '#999966'" onclick="runGame()">Hrať znova</div>
+	
+	<script src="menu.js"></script>
+	
+	<script src="test.js"></script>
+	
+</body>
+</html>
